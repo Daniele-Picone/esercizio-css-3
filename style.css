@@ -159,7 +159,15 @@ aside{
       height: 30px;
       width: 30px;
       right: 10px;
-      bottom: 10px;      
+      bottom: 10px;
+      transition: 0.5s;      
+}
+
+.button-up:hover{
+     transform: scaleX(-1);
+     transform: scaleY(-1);
+    
+     
 }
 @media screen and (min-width:160px) and  (max-width:860px) 
 {
