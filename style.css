@@ -1,0 +1,235 @@
+*{
+ font-family: "Roboto", sans-serif;
+ font-weight: 400;
+ font-style: normal; 
+ text-decoration: none; 
+}
+h1,h2,h3{
+font-family: "Electrolize", sans-serif;
+font-weight: 800;
+font-style: normal;
+color: rgb(12, 11, 11);
+}
+body{
+      margin: 0px 5px;
+      position: relative;
+}
+nav{
+     
+      background-color: rgba(229, 208, 19, 0.877);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+      
+ }
+.Logo{
+      width: 100px;
+      height: 100px;
+    
+         
+}
+.nav-list{
+      
+     color: white;
+     margin-right: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+nav a {
+      text-decoration: none;
+     list-style-type: none;
+     color: white;
+
+}
+
+
+.figlio{
+      list-style: none;
+     margin: 0px 20px;
+      width: 120px;
+     height: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-transform: uppercase;
+    
+     
+  }
+
+.figlio:hover{
+      transform: scale(1.2);
+      border: 3px solid rgb(10, 10, 10);
+      border-top: 3px solid red;
+      border-left: 3px dashed green;
+      border-right: 3px dashed green;
+}
+
+main{
+      display: flex;
+      align-items: center;
+}
+
+.intestazione{ 
+      background-color: #EEEDED;
+      border-radius: 30px;
+      margin-top: 60px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      text-transform: uppercase;
+      
+       }
+#evidenza{
+      margin-top: 25px;
+      text-transform: uppercase;
+     
+      text-align: center;
+}
+header a {
+      list-style: none;
+      color: rgb(93, 90, 90);
+}
+img{
+      width: 100%;
+      height: auto;
+}
+.botton-article{
+      background-color: black;
+      color: white;
+      border-radius: 50px;
+      padding: 5px;
+      text-transform: uppercase;
+}
+.botton-article:hover{
+background-color: yellow;
+border: 2px solid black;
+color: black;
+}
+section{
+      
+      height: 70vh;
+      width: 60%;
+     display: flex;
+    
+     align-items: center;
+     margin: 35px;
+}
+article{
+      background-color: rgba(128, 128, 128, 0.313);
+      border: 2px solid black;
+      border-radius: 15px;
+      width: 30%;
+      padding: 10px;
+      height: 90%;
+      
+}
+.flex-article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+      margin-right: 50px;
+}
+article a {
+      list-style: none;
+      color: white;
+     
+}
+article a:hover{
+      color: black;
+}
+
+aside{
+  background-color: rgba(229, 208, 19, 0.877);    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 65vh;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+  position: sticky;
+  
+}
+.button-up{
+      position: fixed;
+      height: 30px;
+      width: 30px;
+      right: 10px;
+      bottom: 10px;      
+}
+@media screen and (min-width:160px) and  (max-width:860px) 
+{
+      nav{
+            width: 100%;
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+      
+       
+      }
+
+      .Logo{
+            width: 70px;
+            height: 90px;
+            margin: 4px;
+      display: flex;
+      position: absolute;
+      
+      
+      }
+      .nav-list{
+            display: inline;
+            position: relative;
+            flex-direction: column; 
+            align-items: l;
+            
+      }
+      .figlio{
+            margin: 3px;
+            width: auto;
+            height:13px;
+            position: relative;
+            left: 60%;
+            
+            justify-content: center;
+       
+         
+      }
+    
+main{
+      position: relative;
+}
+section{
+      display: list-item;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+
+}
+article{
+      display: list-item;
+      width: 60% ;
+      height: auto;
+      padding: 7px;
+      flex-direction: column;
+      margin-bottom: 25px;
+      
+}
+  aside{
+    display: flex;
+    margin-top: 0px;
+    position: sticky;
+      margin-right: 30px;
+      padding: 0px;
+      display: flexbox;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      
+}
+}
