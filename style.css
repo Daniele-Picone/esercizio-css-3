@@ -18,6 +18,7 @@ nav{
      
       background-color: rgba(229, 208, 19, 0.877);
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
       
@@ -32,7 +33,7 @@ nav{
 .nav-list{
       
      color: white;
-     margin-right: 10px;
+     margin-right: 15px;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -47,13 +48,14 @@ nav a {
 
 .figlio{
       list-style: none;
-     margin: 0px 20px;
+     margin: 0px 30px;
       width: 120px;
      height: 30px;
      display: flex;
      justify-content: center;
      align-items: center;
      text-transform: uppercase;
+     text-
     
      
   }
@@ -151,7 +153,7 @@ aside{
   border: 1px solid black;
   border-radius: 15px;
   text-align: center;
-  position: sticky;
+  
   
 }
 .button-up{
@@ -169,13 +171,86 @@ aside{
     
      
 }
-@media screen and (min-width:160px) and  (max-width:860px) 
+/* footer{
+      background-color: grey;
+      display: flex;
+      position: relative;
+      
+      
+    
+    
+
+}
+footer a{
+      
+      color: white;
+      text-decoration: none;
+}
+.footerbox{
+      display: flex;
+      position: relative;
+     
+      flex-direction: column;
+     
+      
+    
+}
+#corsi{
+      
+      width: 30%;
+      height: 200px;
+      position: relative;
+      left: 100px;
+      margin: 35px;
+      border: 2px solid rgb(199, 218, 55);
+      align-items: center;
+      flex-direction: column;
+      
+    
+     
+}
+     
+
+#guide{
+      width:30%;
+      height: 200px;
+      position: relative;
+      left: 200px;
+      margin: 35px;
+      border: 2px solid rgb(199, 218, 55);
+      align-items: center;
+      flex-direction: column;
+      
+     
+    
+  
+}
+
+.footerfiglio{
+      margin: 10px;
+       list-style-type: none;
+      flex-direction: column;
+      
+      
+         
+} */
+
+@media screen and (min-width:160px) and  (max-width:660px) 
 {
+      body{
+            width: 100%;
+            position:inherit;
+            margin-right: 0px;
+            padding: 0px;
+        
+      }
       nav{
             width: 100%;
             display: flex;
             position: relative;
             align-items: flex-start;
+            margin: 0px;
+          
       
        
       }
@@ -209,7 +284,21 @@ aside{
       }
     
 main{
-      position: relative;
+display:list-item;
+position: relative;
+justify-content: center;
+  padding: 0px;   
+}
+.intestazione{
+      width: 100%;
+      margin-right: 0px;
+      
+}
+#evidenza{
+      width: 50px;
+      
+      display: flex;
+     text-transform: lowercase;
 }
 section{
       display: list-item;
@@ -217,6 +306,9 @@ section{
       align-items: center;
       justify-content: center;
       align-items: center;
+      margin: 0px;
+      position: relative;
+     
 
 }
 article{
@@ -227,17 +319,31 @@ article{
       flex-direction: column;
       margin-bottom: 25px;
       
+      position: relative;
 }
   aside{
     display: flex;
     margin-top: 0px;
-    position: sticky;
-      margin-right: 30px;
+   position: absolute;
+   left: 50%;
       padding: 0px;
-      display: flexbox;
-      height: auto;
+         height: auto;
       align-items: center;
       justify-content: center;
       
 }
+.button-up{
+      position: fixed;
+      height: 15px;
+      width: 15px;
+    /* margin-right: 70px; */
+    display: flex;
+    left: 70%;
+      bottom: 10px; 
+      transition: 0.5s;    
+      align-items: end;
+      justify-content: center;
 }
+
+
+ }
