@@ -55,10 +55,8 @@ nav a {
      justify-content: center;
      align-items: center;
      text-transform: uppercase;
-     text-
-    
      
-  }
+    }
 
 .figlio:hover{
       transform: scale(1.2);
@@ -161,184 +159,111 @@ aside{
       height: 30px;
       width: 30px;
       right: 10px;
+      top: 88vh;
+      border-radius: 50%;
       bottom: 10px;
-      transition: 0.5s;      
+      animation-name: btn-up;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+
+   
 }
 
-.button-up:hover{
-     transform: scaleX(-1);
-     transform: scaleY(-1);
+.button-up:active{
+      background-color: yellow;
     
-     
-}
-/* footer{
-      background-color: grey;
-      display: flex;
-      position: relative;
-      
-      
-    
-    
+     }
+     @keyframes btn-up {
+      0%{
+            transform: translateY(50px);
 
-}
-footer a{
-      
-      color: white;
-      text-decoration: none;
-}
-.footerbox{
-      display: flex;
-      position: relative;
-     
-      flex-direction: column;
-     
-      
-    
-}
-#corsi{
-      
-      width: 30%;
-      height: 200px;
-      position: relative;
-      left: 100px;
-      margin: 35px;
-      border: 2px solid rgb(199, 218, 55);
-      align-items: center;
-      flex-direction: column;
-      
-    
-     
-}
-     
+      }
+      100%{
+            transform: translateY(0px);
+      }
+     }
 
-#guide{
-      width:30%;
-      height: 200px;
-      position: relative;
-      left: 200px;
-      margin: 35px;
-      border: 2px solid rgb(199, 218, 55);
-      align-items: center;
-      flex-direction: column;
-      
-     
-    
-  
-}
 
-.footerfiglio{
-      margin: 10px;
-       list-style-type: none;
-      flex-direction: column;
-      
-      
-         
-} */
-
-@media screen and (min-width:160px) and  (max-width:660px) 
+@media screen and (max-width:660px) 
 {
-      body{
-            width: 100%;
-            position:inherit;
-            margin-right: 0px;
-            padding: 0px;
-        
+      main{
+            display: block;
       }
       nav{
             width: 100%;
-            display: flex;
-            position: relative;
-            align-items: flex-start;
-            margin: 0px;
-          
+           border-radius: 10px;
+            display: block;
+            justify-content: space-evenly;
+            align-items: center;  }
+ .nav-list{
+      font-size: 10px;
+      margin-top: 15px;
       
-       
-      }
-
-      .Logo{
-            width: 70px;
-            height: 90px;
-            margin: 4px;
-      display: flex;
-      position: absolute;
-      
-      
-      }
-      .nav-list{
-            display: inline;
-            position: relative;
-            flex-direction: column; 
-            align-items: l;
-            
-      }
-      .figlio{
-            margin: 3px;
-            width: auto;
-            height:13px;
-            position: relative;
-            left: 60%;
-            
-            justify-content: center;
-       
-         
-      }
+ }
+ .figlio{
+      margin:1px;
+      margin-top: 15px;
+ }
+ .Logo{
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      position: absolute; 
+ }
+ 
+ .intestazione{
+      text-align: center;
+      margin-top: -10px;
+      font-size: 10px;
+ }
+ .evidenza{
+      font-size: 10px;
     
-main{
-display:list-item;
-position: relative;
-justify-content: center;
-  padding: 0px;   
-}
-.intestazione{
+ }
+ section{
+      display: block;
+      margin-left: 10px;
+      margin-top: 15px;
       width: 100%;
-      margin-right: 0px;
-      
-}
-#evidenza{
-      width: 50px;
-      
-      display: flex;
-     text-transform: lowercase;
-}
-section{
-      display: list-item;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      align-items: center;
+      height: auto;
       margin: 0px;
-      position: relative;
+    
+      /* flex-direction: column; */
      
 
 }
-article{
-      display: list-item;
-      width: 60% ;
+.flex-article{
+      width: 100%;
       height: auto;
-      padding: 7px;
-      flex-direction: column;
-      margin-bottom: 25px;
-      
-      position: relative;
-}
-  aside{
-    display: flex;
-    margin-top: 0px;
-   position: absolute;
-   left: 50%;
+       padding: 5px;
+      margin-top: 10px;
       padding: 0px;
-         height: auto;
-      align-items: center;
-      justify-content: center;
-      
+     
 }
+
+article{
+
+      display: block;
+      
+      justify-content: center;
+      align-items: center;
+}
+ aside{
+      margin-top: 10px;
+      width: 100%;
+      height: auto;
+      display: block;
+ }
+
+
+
 .button-up{
       position: fixed;
-      height: 15px;
-      width: 15px;
+      height: 20px;
+      width: 20px;
     /* margin-right: 70px; */
     display: flex;
-    left: 70%;
+ right: 10%;
       bottom: 10px; 
       transition: 0.5s;    
       align-items: end;
